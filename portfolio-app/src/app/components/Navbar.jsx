@@ -1,6 +1,7 @@
 "use client";
 import Link from 'next/link'
 import React, { useState } from "react";
+import Image from 'next/image'; 
 import NavLink from './NavLink'
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import MenuOverlay from './MenuOverlay';
@@ -18,10 +19,6 @@ const navLinks = [
     title: "Опыт и протфолио",
     path: "#Expirience",
   },
-  {
-    title: "Контакты",
-    path: "#Contact",
-  },
 ];
 
 const Navbar = () => {
@@ -29,13 +26,17 @@ const Navbar = () => {
 
   return (
     <nav className="fixed mx-auto border border-[#33353F] top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-100">
-      <div className="flex container lg:py-4 flex-wrap items-center justify-between mx-auto">
-        <Link
-          href={"/"}
-          className="text-2xl md:text-5xl text-white font-semibold"
-        >
-          LOGO
+      <div className="flex container lg:py-4 flex-wrap items-center justify-between mx-auto px-8">
+        <Link href={"/"}>
+          <Image
+            src="/Images/kernel_panic.png"
+            width={70} 
+            height={70} 
+            alt="Логотип"
+            className='rounded-full'
+          />
         </Link>
+        
         <div className="mobile-menu block md:hidden">
           {!navbarOpen ? (
             <button

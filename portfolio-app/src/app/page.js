@@ -1,7 +1,9 @@
 import AboutSection from "./components/AboutSection";
+import GitHubSection from "./components/ExpirienceSection";
 import HeroSection from "./components/HeroSection";
 import Navbar from "./components/Navbar"; 
 import WhatSection from "./components/WhatSection";
+import Footer from "./components/Footer";
 
 
 export default function Home() {
@@ -12,7 +14,9 @@ export default function Home() {
         <HeroSection/>
         <AboutSection/>
         <WhatSection/>
+        <GitHubSection/>
       </div>
+      <Footer/>
     </main>
   );
 }

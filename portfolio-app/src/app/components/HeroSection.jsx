@@ -31,10 +31,20 @@ const HeroSection = () => {
                     </h1>
                 <p className="text-white text-base sm:text-lg lg:text-xl mb-6" ></p>
                 <div>
-                    <button className='px-6 py-3 w-full sm:w-fit text-white bg-gradient-to-br from-green-600 to-black-600  rounded-full bg-[#181818] mr-4'>Телеграмм</button>
-                    <button className="px-1 py-1 rounded-full w-full sm:w-fit bg-gradient-to-br from-green-500 to-black-600 hover:bg-slate-800 text-white border border-green-400 mt-3">
-                        <span className=' block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2'>GitHub</span>
+                    <button className='px-6 py-3 w-full sm:w-fit text-white bg-gradient-to-br from-green-600 to-black-600  rounded-full bg-[#181818] mr-4'>
+                        <a href="https://t.me/baklagane" >
+                        Телеграмм
+                    </a>
                         </button>
+                    <button className="px-1 py-1 rounded-full w-full sm:w-fit bg-gradient-to-br from-green-500 to-black-600 hover:bg-slate-800 text-white border border-green-400 mt-3">
+                        <a href="https://github.com/ardan03" >
+                        <span class="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
+                            GitHub
+                        </span>
+                    </a>
+                        </button>
+                
+                    
                 </div>
             </div>
             <div className='col-span-5 place-self-center mt-4 lg:mt-0'>
